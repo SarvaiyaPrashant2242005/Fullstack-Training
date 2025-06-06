@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic HTML Form</title>
+
+</head>
+<body>
+<center>
+  <h2>Basic HTML Form</h2>
+  <form action="/submit-form" method="POST">
+    
+    <!-- Text input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <!-- Email input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+<br>
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+<br>
+    <!-- Number input -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age">
+<br>
+    <!-- Radio buttons -->
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male" style="display:inline">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female" style="display:inline">Female</label>
+<br>
+    <!-- Checkboxes -->
+    <label>Hobbies:</label>
+    <input type="checkbox" id="reading" name="hobbies" value="reading">
+    <label for="reading" style="display:inline">Reading</label>
+    <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+    <label for="traveling" style="display:inline">Traveling</label>
+    <input type="checkbox" id="sports" name="hobbies" value="sports">
+    <label for="sports" style="display:inline">Sports</label>
+<br>
+<!-- Select dropdown categorized using optgroup -->
+<!-- Select dropdown categorized using optgroup -->
+<label for="country">Country:</label>
+<select id="country" name="country">
+  <option value="">--Select--</option>
+
+  <optgroup label="Asia">
+    <option value="india">India</option>
+    <option value="china">China</option>
+    <option value="japan">Japan</option>
+  </optgroup>
+
+  <optgroup label="Europe">
+    <option value="uk">United Kingdom</option>
+    <option value="germany">Germany</option>
+    <option value="france">France</option>
+  </optgroup>
+
+  <optgroup label="North America">
+    <option value="usa">United States</option>
+    <option value="canada">Canada</option>
+    <option value="mexico">Mexico</option>
+  </optgroup>
+
+  <optgroup label="Africa">
+    <option value="nigeria">Nigeria</option>
+    <option value="kenya">Kenya</option>
+    <option value="egypt">Egypt</option>
+  </optgroup>
+</select>
+
+
+<br>
+    <!-- Textarea -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+<br>
+    <!-- File input -->
+    <label for="file">Upload File:</label>
+    <input type="file" id="file" name="file">
+<br>
+    <!-- Date input -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+<br>
+    <!-- Submit and Reset buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+<br>
+  </form>
+</center>
+</body>
+</html>
