@@ -1,0 +1,50 @@
+.outer{
+    border: 2px solid black;
+    background-color: yellow;
+    height: 50vh;
+    width: 90vw;
+    font-size: 32px;
+    position: relative;
+    display: flex;
+      flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    /* justify-content: space-around; */
+        /* justify-content: center; */
+
+}
+
+.itemdiv{
+    display: flex;
+    display: inline-block;
+    font-size: 1em;
+    border: 2px solid black;
+    background-color: rgb(255, 0, 0);
+    height: 100px;
+    width: 100px;
+    margin: 0.5rem;
+  
+}
+#item3{
+    /* display: none; */                /*Hidden with the space*/
+    /* visibility: hidden; */           /*Hidden without space*/
+    /* position: absolute; */
+    /* top: 5px; */
+}
+#item5{
+    /* top: 5px; */
+    /* position: absolute; */
+}
+
+/* 
+    bgimage, 
+    bgsize; cover,contain,auto
+    bgposition ; top,left,right
+
+*/
+
+/* 
+2em = 2 * fontsize(parentElement)
+2rem = 2* fontsize(rootElement) */

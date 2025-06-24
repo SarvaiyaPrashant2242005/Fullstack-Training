@@ -1,0 +1,15 @@
+[
+  { "name": "Aarav Shah", "email": "aarav.shah@example.com", "rollNumber": "U101" },
+  { "name": "Diya Mehta", "email": "diya.mehta@example.com", "rollNumber": "U102" },
+  { "name": "Kabir Patel", "email": "kabir.patel@example.com", "rollNumber": "U103" },
+  { "name": "Anaya Rathi", "email": "anaya.rathi@example.com", "rollNumber": "U104" },
+  { "name": "Vivaan Desai", "email": "vivaan.desai@example.com", "rollNumber": "U105" },
+  { "name": "Myra Trivedi", "email": "myra.trivedi@example.com", "rollNumber": "U106" },
+  { "name": "Reyansh Joshi", "email": "reyansh.joshi@example.com", "rollNumber": "U107" },
+  { "name": "Ira Bhatt", "email": "ira.bhatt@example.com", "rollNumber": "U108" },
+  { "name": "Ayaan Shah", "email": "ayaan.shah@example.com", "rollNumber": "U109" },
+  { "name": "Kiara Soni", "email": "kiara.soni@example.com", "rollNumber": "U110" },
+  { "name": "Arjun Rawal", "email": "arjun.rawal@example.com", "rollNumber": "U111" },
+  { "name": "Meera Khatri", "email": "meera.khatri@example.com", "rollNumber": "U112" },
+  { "name": "Neil Pandya", "email": "neil.pandya@example.com", "rollNumber": "U113" }
+]

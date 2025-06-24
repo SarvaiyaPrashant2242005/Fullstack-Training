@@ -1,0 +1,13 @@
+git -v 
+    -> Tells the version
+
+git init
+    -> Initializes git repository into local storage
+
+git status
+    ->  Tells the status of the project files (in which files changes)
+
+git add ____
+    -> __ includes file name to add the file in stagging area (if all the files then use .)
+
+git commit -m "<messege>"

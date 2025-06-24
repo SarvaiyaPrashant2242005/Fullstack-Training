@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:aquamarine;
+  font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+h1 {
+    color: rgba(74, 97, 52, 0.785);
+}
+
+.Text {
+    color: blueviolet;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.font {
+    text-align: center;
+}
+
+#one {
+    font-weight: 800;
+    font-size: xx-large;
+    text-decoration: overline;
+}
+
+#two {
+    font-weight: 700;
+    font-size: x-large;
+    text-transform:capitalize;
+}
+
+#three {
+    font-weight: 600;
+    font-size:larger;
+    text-decoration: line-through;
+}
+
+#four {
+    font-weight: 500;
+    font-weight: large;
+    text-decoration: wavy;
+}
+
+#five {
+    font-weight: 400;
+    font-size: small;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+}
+
+#outer {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: darkolivegreen;
+
+}
+
+#inner {
+    border-style: double;
+    border: solid purple 3px;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(47, 52, 203);
+    flex-wrap:  ;
+}

@@ -1,0 +1,165 @@
+show databases / show dbs
+    ->To show the databases of MongoDB
+
+use <db-name>
+    ->To create a new database / use
+    
+db.createCollection("");
+    ->To create collection
+
+show collections
+    ->To see the collection
+
+db.dropDatabase()
+    -> To delete the db
+
+db.<collectionname>.drop()
+    -> To delete particular collection
+
+
+--------------------------------------------CRUD Operations ---------------------------------------
+
+create
+    -> insertOne || insertMany
+
+Read
+    -> find
+
+update
+    -> updateOne || updateMany
+
+delete  
+    -> deleteOne || deleteMany
+
+----------------------------------------------- Create Example -----------------------------------------------
+
+>>>>>insertOne
+
+FS2> db.createCollection("Students")
+{ ok: 1 }
+
+FS2> db.Students.insertOne({name : "Prashant" })
+{
+  acknowledged: true,
+  insertedId: ObjectId('685256787acac0064050eb67')
+}
+
+>>>> insertMany
+
+FS2> db.Students.insertMany([{
+    name : "Prashant";
+    name : "Rohit";
+}])
+
+
+FS2> db.Students.find()
+[
+  { _id: ObjectId('685256787acac0064050eb67'), name: 'Prashant' },
+  { _id: ObjectId('685257dd7acac0064050eb69'), name: 'Rohit' }
+]
+
+db.items.insertMany([
+    {itemName : "Seb" , quantity : 10 , price : 100},
+    {itemName : "kela" , quantity : 10 , price : 100},
+    {itemName : "aam" , quantity : 10 , price : 100},
+    {itemName : "stawberry" , quantity : 10 , price : 100},
+    {itemName : "Dragon" , quantity : 10 , price : 100},
+    {itemName : "KIWI" , quantity : 10 , price : 100}
+])
+
+------------------------------------------------ Read the Doc ----------------------------------------------
+
+FS2> db.Students.find()
+[ { _id: ObjectId('685256787acac0064050eb67'), name: 'Prashant' } ]
+
+
+FS2> db.items.find().count()
+6
+
+FS2> db.items.findOne()
+{
+  _id: ObjectId('6852591f7acac0064050eb6a'),
+  itemName: 'Seb',
+  quantity: 10,
+  price: 100
+}
+
+
+--------------------------------------------- Comparision Operators ----------------------------------------------------------
+->equals to
+FS2> db.items.find({quantity : {$eq : 10}})
+
+-> greater then
+FS2> db.items.find({quantity : {$gt : 1}})
+
+->less then
+FS2> db.items.find({quantity : {$lt : 1}})
+
+->lessthen or equals t0
+FS2> db.items.find({quantity : {$lte : 1}})
+
+->greater then or equals to
+FS2> db.items.find({quantity : {$gte : 1}})
+
+-> in
+FS2> db.items.find({quantity : {$in : [10,4,5]}})
+
+------------------------------------------------------------------------Order --------------------------------------------
+
+-> Accending
+
+FS2> db.items.find().sort({quantity : 1})
+
+
+-> Decending
+FS2> db.items.find().sort({quantity : -1})
+
+FS2> db.items.find({$and : [{prince : 70}, {quantity:40}]})
+
+
+
+db.items.find({price : {not : {$gt : 10}}})
+
+------------------------------------------------ Cursor Pointer -------------------------------------------------------
+.count()
+
+.limit(n)
+
+.skip(n)
+
+.sort({key : 1 || -1})
+
+-------------------------------------------- JSON to MongoDB ------------------------------------------------------
+
+
+mongoimport <filepath> -d sampleFS2 -c studentData --jsonArray
+
+mongoexport -d <dbname> -c <collectionname> -o <filename.json> --jsonArray
+
+mongoexport -d <sampleFS2> -c <studentData> -o <index.json> --jsonArray
+
+-------------------------------------------- UPDATE ------------------------------------------------------
+
+
+db.items.updateMany({price : 10}, {$set : {price : 10}})
+
+db.items.updateMany({} , {$unset : {onSale : 1}})
+
+db.items.updateMany(
+...   { price: { $gte: 70 } },
+...   { $rename: { "price": "avgPrice" } }
+... )
+
+-------------------------------------------- Aggregation ------------------------------------------------------
+
+$match
+
+db.items.aggregate([
+    {$match : {quantity : {$lte : 20}}},
+    {$match : {price : {$in : [30,40]}}}
+])
+
+$group
+
+
+ z

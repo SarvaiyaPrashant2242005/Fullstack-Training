@@ -1,0 +1,16 @@
+.container{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image:url('bg-image.jpg');
+    background-size: cover;          /* Fills entire elements with the image */
+    /* background-size: contain; */         /*Fits entire image inside elements*/
+    /* background-size: auto; */            /*Default used to original sizre*/
+}
+
+body{
+    background-image: url('tumblr_oyn9a08ys41wzlvpdo1_1280.gif');
+    background-size: cover;
+}

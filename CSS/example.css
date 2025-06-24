@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Edu NSW ACT Hand Pre", cursive;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    height: 80px;
+    background-color: black;
+}
+
+#text {
+    color: white;
+    font-size: xx-large;
+}
+
+.footer {
+    background-color: green;
+    height: 60px;
+    margin-top: auto; /* Push footer to bottom */
+}
+ 
+h1{
+    font-size: 50px;
+    color: crimson;
+}
+
+.content{
+    margin-top: 5%;
+    margin-left: 50px;
+    font-size: 20px;
+    color:forestgreen;
+    font-weight: bolder;
+}

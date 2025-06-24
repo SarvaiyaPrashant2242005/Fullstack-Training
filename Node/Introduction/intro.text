@@ -1,0 +1,77 @@
+To run JS externally node js was introduced.
+
+Modules provided by node js
+    -> FS
+    -> OS
+    -> Path
+
+key features 
+    -> Event Driven
+    -> Asnchronus
+    -> Multithreading
+
+use cases
+    -> server
+    -> Chat app
+    -> REST APIs
+
+initialozation
+    -> npm init -y
+
+Install package
+    -> npm i package-name   
+    
+-----------------------------------<<Versioning>>-----------------------------------------------
+
+version = xx.yy.zz
+
+xx => Major Update   (New feature implemented do not req to update)
+yy => Minor Update   (requrie to update - bug fixed etc)
+zz => Patch Update   (DO not requrie to update)
+
+22.00.00       => it will remain the same after the update
+^22.00.00      => if there is minor or patch update it will update
+~22.00.00      => Only update the patches
+
+
+---------------------------------------Request Methods------------------------------------------
+
+GET     -> to get the information (Data travels via url)
+POST    -> to create/add the information (Data travels via request body)
+PUT     -> to update/replace the information   (Data travels via request body)
+PATCH   -> partially update the information     (Data travels vis request body)
+DELETE  -> to DELETE the information            (Data travels via request)
+
+----------------------------------------Status Codes--------------------------------------------
+
+1xx -> informational codes 
+2xx -> success codes
+3xx -> Redirectional codes
+4xx -> Client side error codes
+5xx -> Server side error codes
+
+-----------------------------------------FS modules-------------------------------------------
+FS = File System
+
+FS modules used to create an external file and append the Data
+
+use cases : 
+    -> create file      fs.appendFile(), fs.open(), fs.writeFile()
+    -> Read File        fs.readFile()
+    -> Update File      fs.appendFile(), or fs.writeFile()
+    -> rename file      fs.rename()
+    -> Delete file      fs.unlink()
+
+-----------------------------------------URL Modules--------------------------------------------------------------
+URL modules split the url into the readable parts
+
+
+https://www.youtube.com/serch?=ggue8&fjkdbf
+
+https = Protocol
+www.youtube.com = Hostname or Domain name
+serch = path name
+remaining queries
+
+-----------------------------------------Path Modules--------------------------------------------------------------
+divides the path 

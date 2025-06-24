@@ -1,0 +1,34 @@
+[
+    {
+        "id": 3,
+        "first_name": "Raj",
+        "last_name": "Verma",
+        "work_profile": "Data Analyst",
+        "gender": "Male",
+        "email": "raj.verma@example.com"
+    },
+    {
+        "id": 4,
+        "first_name": "Priya",
+        "last_name": "Singh",
+        "work_profile": "Project Manager",
+        "gender": "Female",
+        "email": "priya.singh@example.com"
+    },
+    {
+        "id": 5,
+        "first_name": "Karan",
+        "last_name": "Mehta",
+        "work_profile": "DevOps Engineer",
+        "gender": "Male",
+        "email": "karan.mehta@example.com"
+    },
+    {
+        "id": 6,
+        "first_name": "Prashant",
+        "last_name": "Sarvaiya",
+        "work_profile": "Full Stack Developer",
+        "gender": "male",
+        "email": "prashanthere90@gmail.com"
+    }
+]
