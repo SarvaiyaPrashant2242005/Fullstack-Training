@@ -1,0 +1,18 @@
+.header{
+    background-color: black;
+    color: white;
+    height: 15%;
+
+}
+
+.header-content{
+    text-align: center;
+}
+.header-title{
+    font-size: 2rem;
+}
+
+.header-desc{
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
