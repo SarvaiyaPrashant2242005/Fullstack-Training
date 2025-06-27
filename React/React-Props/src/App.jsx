@@ -1,19 +1,23 @@
-import { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Layout from './components/Router/LayOut/Layout'
+import Home from './components/Router/Pages/Home'
+import About from './components/Router/Pages/AboutUs'
+import Contact from './components/Router/Pages/Contact'
 import './App.css'
-import Header from './components/Header/Header'
-import Card from './components/Card/Card'
-import Footer from './components/Footer/Footer'
-import {headerInfo} from '../public/HeaderData';
-import {footerData, footerLinks} from "../public/FooterData";
-import { cardData } from '../public/cardData'
-import FeedBack from './components/FeedBack-Form/FeedBack'
 
 function App() {
-
   return (
-    <>
-        <FeedBack/>
-    </>
+    <Router>
+      <Routes>
+        {/* Wrap all pages inside Layout */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} /> 
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<h1>404 Not Found</h1>} />
+        </Route>
+      </Routes>
+    </Router>
   )
 }
 

@@ -46,9 +46,12 @@ body {
 .nav-links a:hover {
   /* background-color: #222; */
   color: #00ffaa;
+  text-decoration: underline;  
 }
 
 /* Active NavLink */
 .nav-links a.active {
   color: rgb(0, 255, 81);
+    text-decoration: underline;  
+
 }
